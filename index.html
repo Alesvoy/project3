@@ -3,12 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Project 3</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <header>
+      <div class="header__title">
+        <h2>The Code Review</h2>
+      </div>
+      <div class="header__subtitle">
+        <h1 class="header__subtitle__h1">Signup for our newsletter</h1>
+        <p class="header__subtitle__p">
+          Get the latest news on how your code is doing right in your inbox
+        </p>
+      </div>
+    </header>
+    <hr class="first_hr" />
+    <hr class="second_hr" />
+    <main>
+      <form>
+        <fieldset>
+          <label class="form__title">Contact Information</label>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Required"
+            required
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Required"
+            required
+          />
+          <label for="phone">Phone Number</label>
+          <input type="number" name="phone" id="phone" />
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="Texas">Texas</option>
+            <option value="California">California</option>
+            <option value="New York">New York</option>
+          </select>
+          <label for="zip">Zip Code</label>
+          <input type="number" name="zip" id="zip" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
   </body>
 </html>
