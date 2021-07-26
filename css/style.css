@@ -100,6 +100,15 @@ input::placeholder {
   margin: 0.75rem 0 0.75rem 1rem;
 }
 
+form {
+  padding: 0 1rem;
+}
+
+.fieldset--2 {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   background-color: rgb(10, 196, 171);
   color: #fff;
@@ -118,4 +127,52 @@ footer p {
   font-size: 0.75rem;
   color: rgb(163, 163, 163);
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 8%;
+    margin-top: 1rem;
+  }
+
+  .fieldset--1 {
+    margin-top: 1rem;
+  }
+
+  .flex-container {
+    display: flex;
+    flex: 1 50%;
+    flex-wrap: wrap;
+  }
+
+  .item1 {
+    flex: 1 100%;
+  }
+
+  .item2,
+  .item4,
+  .item6,
+  .item8,
+  .item10,
+  .item12 {
+    flex: 1 25%;
+    align-self: center;
+  }
+
+  .item3,
+  .item5,
+  .item7,
+  .item9,
+  .item11,
+  .item13 {
+    flex: 1 75%;
+  }
+
+  .item12 {
+    max-width: 25%;
+  }
+
+  .item13 {
+    max-width: 25%;
+  }
 }

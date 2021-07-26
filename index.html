@@ -32,30 +32,32 @@
       <hr class="second_hr" />
       <main>
         <form>
-          <fieldset class="fieldset--1">
-            <label class="form__title">Contact Information</label>
-            <label for="name">Full Name</label>
+          <fieldset class="fieldset--1 flex-container">
+            <label class="form__title item1">Contact Information</label>
+            <label class="item2" for="name">Full Name</label>
             <input
+              class="item3"
               type="text"
               name="name"
               id="name"
               placeholder="Required"
               required
             />
-            <label for="email">Email Address</label>
+            <label class="item4" for="email">Email Address</label>
             <input
+              class="item5"
               type="email"
               name="email"
               id="email"
               placeholder="Required"
               required
             />
-            <label for="phone">Phone Number</label>
-            <input type="number" name="phone" id="phone" />
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" />
-            <label for="state">State</label>
-            <select name="state" id="state">
+            <label class="item6" for="phone">Phone Number</label>
+            <input class="item7" type="number" name="phone" id="phone" />
+            <label class="item8" for="city">City</label>
+            <input class="item9" type="text" name="city" id="city" />
+            <label class="item10" for="state">State</label>
+            <select class="item11" name="state" id="state">
               <option
                 class="place-holder"
                 value="none"
@@ -69,8 +71,14 @@
               <option value="California">California</option>
               <option value="New York">New York</option>
             </select>
-            <label for="zip">Zip Code</label>
-            <input class="fieldset--1__zip" type="number" name="zip" id="zip" />
+            <label class="item12" for="zip">Zip Code</label>
+            <input
+              class="item13"
+              class="fieldset--1__zip"
+              type="number"
+              name="zip"
+              id="zip"
+            />
           </fieldset>
           <hr class="second_hr" />
           <fieldset class="fieldset--2">
