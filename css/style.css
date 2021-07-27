@@ -84,7 +84,7 @@ input::placeholder {
 
 .fieldset--1__zip {
   display: block;
-  width: 50%;
+  max-width: 50%;
 }
 
 .fieldset--2__p {
